@@ -1,5 +1,4 @@
-﻿// ConsoleApplication3.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
+
 
 #include <iostream>
 
@@ -11,7 +10,7 @@ using namespace std;
 int main()
 {
     setlocale(0, "");
-    vector<int> sequence; //создаёт вектор который хранит последовательность чисел
+    vector<int> sequence; 
     int n;
     cout << "Введите количество элементов в последовательности: ";
     cin >> n;
@@ -20,7 +19,7 @@ int main()
     for (int i = 0; i < n; ++i) {
         int num;
         cin >> num;
-        sequence.push_back(num); //добовляет в вектор введённые числа
+        sequence.push_back(num); 
     }
 
     if (sequence.empty())
@@ -34,14 +33,14 @@ int main()
 
     for (int i = 1; i < sequence.size(); ++i)
     {
-        if (sequence[i] < min_num) //исчет еденицы
+        if (sequence[i] < min_num) 
         {
             min_num = sequence[i];
             min_count = 1;
         }
         else if (sequence[i] == min_num)
         {
-            min_count++; // счётчик мин чисел
+            min_count++; 
         }
     }
 
